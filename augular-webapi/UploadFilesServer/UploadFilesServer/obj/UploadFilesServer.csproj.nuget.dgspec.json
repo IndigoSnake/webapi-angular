@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\dotnet-core-file-upload-end-project\\FinishedProject\\UploadFilesServer\\UploadFilesServer\\UploadFilesServer.csproj": {}
+  },
+  "projects": {
+    "G:\\dotnet-core-file-upload-end-project\\FinishedProject\\UploadFilesServer\\UploadFilesServer\\UploadFilesServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\dotnet-core-file-upload-end-project\\FinishedProject\\UploadFilesServer\\UploadFilesServer\\UploadFilesServer.csproj",
+        "projectName": "UploadFilesServer",
+        "projectPath": "G:\\dotnet-core-file-upload-end-project\\FinishedProject\\UploadFilesServer\\UploadFilesServer\\UploadFilesServer.csproj",
+        "packagesPath": "C:\\Users\\RF\\.nuget\\packages\\",
+        "outputPath": "G:\\dotnet-core-file-upload-end-project\\FinishedProject\\UploadFilesServer\\UploadFilesServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\RF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

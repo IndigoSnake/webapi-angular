@@ -1,0 +1,42 @@
+<div class="row" style="margin-bottom:15px;">
+
+  <div class="col-md-3">
+    <input type="file" #file placeholder="Choose file" (change)="uploadFile(file.files)" style="display:none;">
+    <button type="button" class="btn btn-success" (click)="file.click()">Upload File</button>
+  </div>
+
+  <div class="col-md-4">
+    <span class="upload" *ngIf="message">
+      {{message}}
+    </span>
+    <span class="upload" *ngIf="progress > 0">
+      {{progress}}%
+    </span>
+  </div>
+</div>
+
+<div class="fileinfo" style="margin-top:20%;" >
+
+  <table *ngFor="let filetype of filetypes" class="table table-striped" >
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">{{filetype}}</th>
+      <th scope="col">Size</th>
+      <th scope="col">Uploaded Date</th>
+      <th scope="col">User</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let uploadfile of uploadfiles">
+      <ng-container *ngIf="uploadfile.type == filetype">
+        <td>{{uploadfile.name}}</td>
+        <td>{{uploadfile.type}}</td>
+        <td>{{uploadfile.size}}</td>
+        <td>{{uploadfile.uploadedDate}}</td>
+        <td>{{uploadfile.user}}</td>
+      </ng-container>
+    </tr>
+    </tbody>
+  </table>
+</div>

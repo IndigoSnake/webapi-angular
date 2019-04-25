@@ -1,0 +1,28 @@
+<article class="container container-fluid">
+  <div class="create" *ngIf="isCreate">
+      <h3 class = "title">File Upload</h3>
+      <h5 class = "validate">Validate Condition:  Type: pdf, txt, png,  Size: < 100M</h5>
+      <app-upload (onUploadFinished)="uploadFinished($event)"></app-upload>
+
+  </div>
+
+  <div class="users" *ngIf="!isCreate">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Image</th>
+          <th scope="col">Name</th>
+          <th scope="col">Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td><img [src]="createImgPath(user.imgPath)" alt="profile picture" style="width:60px; height:60px;"></td>
+          <td>{{user.name}}</td>
+          <td>{{user.address}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</article>
+

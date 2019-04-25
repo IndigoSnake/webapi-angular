@@ -1,0 +1,33 @@
+.create{
+    width: 70%;
+    border: 1px solid rgb(206, 195, 195);;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px gray;
+}
+
+article section h1{
+    text-align: center;
+}
+
+.users{
+    width: 100%;
+    border: 1px solid rgb(206, 195, 195);;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px gray;
+}
+
+.title{
+  font-weight:bold;
+  color:#28a745;
+  margin-left: 15px;
+  line-height: 36px;
+}
+
+.validate{
+  font-weight:bold;
+  color:#f00000;
+  margin-left: 15px;
+  line-height: 36px;
+}
